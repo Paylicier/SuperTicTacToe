@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Super Tic Tac Toe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="flex flex-row items-center justify-center h-screen bg-gray-800 gap-4">
+    <h1 class="absolute top-8 text-4xl font-bold text-white">Super Tic Tac Toe</h1>
+    <p id="status" class="absolute top-20 text-2xl text-white mb-5"></p>
+    
+    <!-- Game menu container -->
+    <div id="menu" class="flex flex-row gap-4 mt-16 bg-gray-700 rounded-lg">
+      <!-- Leaderboard card -->
+      <div id="leaderboard" class="flex flex-col backdrop-blur-sm p-4 rounded-lg">
+        <h2 class="text-2xl text-white mb-4">Leaderboard</h2>
+        <div id="leaderboard-list" class="flex flex-col gap-2 min-w-[240px]">
+          <!-- Leaderboard items will be inserted here -->
+        </div>
+      </div>
+  
+      <!-- Form card -->
+      <div id="form" class="flex flex-col backdrop-blur-sm p-4 rounded-lg">
+        <h2 class="text-2xl font-bold text-white mb-10 text-center">Play</h2>
+        <input id="username" type="text" class="w-64 p-2 mb-2 bg-gray-800 text-white border border-gray-600 rounded" placeholder="Enter a username (optional)" maxlength="4">
+        <input id="room" type="text" class="w-64 p-2 mb-2 bg-gray-800 text-white border border-gray-600 rounded" placeholder="Enter a room id to join a room">
+        <button id="start" class="w-64 p-2 bg-gray-800 text-white border border-gray-600 rounded hover:bg-gray-700 transition-colors">Create Room</button>
+      </div>
+    </div>
+  
+    <div id="board" class="grid-cols-3 gap-2 p-4 bg-gray-700 rounded-lg hidden">
+      <!-- Board content -->
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+</html>
