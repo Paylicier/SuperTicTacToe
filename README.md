@@ -17,7 +17,7 @@ Super Tic Tac Toe is played on a 3×3 grid of Tic Tac Toe boards. The goal is to
 ## Technical Stack
 
 - **Backend:**
-  - Node.js
+  - Bun
   - Express
   - Socket.IO
   - TypeScript
