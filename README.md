@@ -35,7 +35,6 @@ Super Tic Tac Toe is played on a 3×3 grid of Tic Tac Toe boards. The goal is to
 - Game state synchronization
 - Automatic win detection
 - Responsive design
-- Player disconnection handling
 
 ## Installation
 
@@ -72,7 +71,6 @@ bun server.ts
 - `createRoom`: Request to create a new game room
 - `joinRoom`: Request to join an existing room
 - `move`: Send a move to the server
-- `disconnect`: Automatically sent when a player leaves
 
 ## License
 
